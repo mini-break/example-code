@@ -69,6 +69,6 @@ class StrKeyDict(collections.UserDict):  # <1>
         return str(key) in self.data  # <3>
 
     def __setitem__(self, key, item):
-        self.data[str(key)] = item   # <4>
+        self.data[str(key)] = item  # <4>
 
 # END STRKEYDICT
