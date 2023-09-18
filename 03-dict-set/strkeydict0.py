@@ -36,10 +36,10 @@ Tests for the `in` operator::
 
 
 # BEGIN STRKEYDICT0
-class StrKeyDict0(dict):  # <1>
+class StrKeyDict0(dict):  # <1> StrKeyDict0 继承了 dict
 
     def __missing__(self, key):
-        if isinstance(key, str):  # <2>
+        if isinstance(key, str):  # <2> 如果找不到的键本身就是字符串，那就抛出 KeyError 异常
             raise KeyError(key)
         return self[str(key)]  # <3>
 

@@ -58,7 +58,7 @@ Tests for update using a `dict` or a sequence of pairs::
 import collections
 
 
-class StrKeyDict(collections.UserDict):  # <1>
+class StrKeyDict(collections.UserDict):  # <1> StrKeyDict 是对 UserDict 的扩展
 
     def __missing__(self, key):  # <2>
         if isinstance(key, str):

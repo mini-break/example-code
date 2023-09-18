@@ -15,6 +15,7 @@ WORD_RE = re.compile(r'\w+')  # 不转义使用真实字符例如r'\t'就是输�
 index = {}
 with open(sys.argv[1], encoding='utf-8') as fp:
     """
+    enumerate函数返回的是一个enumerate类型的可迭代对象
     将一个可遍历的数据对象组合为一个索引序列，同时列出数据和数据下标
     seasons = ['Spring', 'Summer', 'Fall', 'Winter']
     list(enumerate(seasons))
